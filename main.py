@@ -36,15 +36,15 @@ app = FastAPI()
 #     # timestamp: datetime
 #     # description: Union[str, None] = None
 
-@app.get("/")
+@app.post("/")
 def mainmain():
     tacotacotaco = 1
     # tacotacotaco = taco_inference.taco_config()
     return tacotacotaco
 
-@app.get("/aaitems/")
-def read_item(skip: int = 0, limit: int = 10):
-    return fake_items_db[skip : skip + limit]
+# @app.get("/aaitems/")
+# def read_item(skip: int = 0, limit: int = 10):
+#     return fake_items_db[skip : skip + limit]
 
 
 
